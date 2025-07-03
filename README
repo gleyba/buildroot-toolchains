@@ -24,3 +24,11 @@ You can also find us on #buildroot on OFTC IRC.
 
 If you would like to contribute patches, please read
 https://buildroot.org/manual.html#submitting-patches
+
+#### To compile toolchain:
+
+    sudo mkdir /build
+    sudo chown "${USER}:${USER}" /build
+    make olddefconfig
+    make
+    make sdk
